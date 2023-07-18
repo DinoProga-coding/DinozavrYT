@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: rgb(43, 41, 41);
+    height: 66px;
+    display: flex;
+    align-items:center ;
+    justify-content: flex-start;
+    .header_logo{
+        width:45px;
+        height: 45px;
+        background: greenyellow;
+        transform: rotate(45deg);
+        margin-right: 20px;
+        margin-left: 50px;
+    }
+    .header_page{
+        color: white;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .header_link{
+        color: antiquewhite;
+        text-decoration-color: greenyellow;
+        transition: 0.4s;
+    }
+    .header_link:hover{
+        margin-left: 10px;
+    }
+    .header_name{
+        a{
+        font-size: 30px;
+        text-align: center;
+        color:white;
+        text-decoration-color:orange;
+        transition: 0.4s;
+        padding: 5px;
+        }
+        a:hover{
+            color:orange;
+            border:2px solid greenyellow;
+        }
+        button{
+            border: 4px solid black;
+            background: rgb(63, 63, 63);
+            font-size: 20px;
+        }
+    }
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    .main_heading{
+       font-size: 30px;
+       text-align: center;
+       font-weight: 600;
+       margin-top: 15px;
+
+    }
+    .main_info{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.line{
+    width: 150px;
+    text-align: center;
+}
+.my_youtube{
+        font-size: 20px;
+        text-align: center;
+        color:rgb(18, 131, 175);
+        transition: 0.4s;
+        padding: 5px;
+        .my_youtube:hover{
+            color:orange;
+            border:2px solid greenyellow;
+        }
+}
+.main_links{
+    font-size: 20px;
+    margin-top: 10px;
+    a{
+        transition: 0.4s;
+        color:rgb(18, 131, 175);
+        text-decoration-color:rgb(18, 131, 175);
+    }
+    a:hover{
+        color: rgb(25, 60, 219);
+    }
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    background-color: rgb(18, 131, 175);
+    text-align: center;
+    border: 4px solid greenyellow;
+    transition: 0.5s;
+    .links{
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        transition: 0.4s;
+    }
+    .links:hover{
+        color:antiquewhite;
+    }
+}
+button:hover{
+    transform: scale(1.1);
+}
+@media (max-width:992px){
+    button{
+        width: 250px;
+        height: 80px;
+        .links{
+            font-size: 30px;
+        }
+    }
+}
+/*Dark-theme*/
+body.dark-theme{
+    background: rgb(83, 81, 81);
+}
+*.dark-theme{
+    color:rgb(0, 0, 0);
+    a{
+      color:rgb(236, 139, 12);
+    }
+    button{
+        border:4px solid black;
+        background: rgb(82, 75, 75);
+    }
+}
